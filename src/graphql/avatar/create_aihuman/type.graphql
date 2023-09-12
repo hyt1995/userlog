@@ -1,0 +1,3 @@
+type Query {
+  create_aihuman(id: Int!): String!
+}

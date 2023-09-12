@@ -1,0 +1,21 @@
+type returnStr {
+    name : String!
+    action_name : String!
+    speaker_name : String!
+}
+
+
+type Mutation {
+  readValue(
+    excel_num : [String!]
+    fix_ex_num : [String!]
+    ea_num : Int!
+    file_name : String!
+    ko_KR : String!
+    en_US : String!
+    supported_language : [Int]
+    sample_rate : Int
+    is_active : Boolean
+    speaker_name : String!
+  ): [returnStr]
+}
