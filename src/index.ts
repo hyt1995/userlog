@@ -23,6 +23,8 @@ if (process.env.NODE_ENV === 'production') {
   dotenv.config({ path: path.join(__dirname, '.production.env') })
 } else if (process.env.NODE_ENV === 'development') {
   dotenv.config({ path: path.join(__dirname, '.development.env') })
+} else if (process.env.NODE_ENV === 'stg') {
+  dotenv.config({ path: path.join(__dirname, '.stg.env') })
 } else {
   throw new Error('process.env.NODE_ENV를 설정하지 않았습니다!')
 }

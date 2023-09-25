@@ -60,7 +60,7 @@ const dbConnect = () => {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,
                 // useCreateIndex: true,
-                retryWrites: false
+                retryWrites: false,
         } as ConnectOptions).catch(e => console.log("mongoose connect error!", e))
 
     // db 연결함수

@@ -1,0 +1,61 @@
+scalar DateTime
+scalar Object
+
+
+type SupportParam {
+    input_file: [String!]
+    output_file: [String!]
+    language: [Int!]
+    sample_rate: [Int!]
+}
+
+type ParameterParam {
+    body: Object
+    params: Object
+    query: Object
+}
+
+type EngineCreateRes {
+    name: String!
+    notation: String!
+    image_path: String
+    large_category: String!
+    middle_category: String!
+    small_category: String
+    owner: String!
+    version: String!
+    kind: String!
+    base_url: String!
+    end_point: String
+    method: String!
+    auth: [String!]
+    description: String
+    input_type: [String!]!
+    output_type: [String!]!
+    support: SupportParam
+    parameter: ParameterParam
+    return: Object
+    open_to: [String!]!
+    is_active: Boolean!
+    createdAt: DateTime!
+    updatedAt: DateTime!
+}
+
+
+
+type Mutation {
+  chatbot_engine_create(
+    name : String!
+    notation : String!
+    small_category : String!
+    owner : String
+    kind : String
+    base_url : String!
+    end_point : String!
+    description : String!
+    language : [Int]
+    host: Int!
+    lang : [Int] 
+    is_active : Boolean
+  ): EngineCreateRes
+}

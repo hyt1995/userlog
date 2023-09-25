@@ -4,7 +4,10 @@ import xlsx from "xlsx"
 import mongoose from "mongoose"
 import brainModel from "../../../../models/brain"
 import avatar from "../../../../models/avatar"
-import {get_tts_param, get_stf_param, make_saving_data} from "../../../../util/tts_params"
+import { make_saving_data} from "../../../../util/tts_params"
+
+
+/// 랭귀지 번호에 따라 _cn, _jp 검사 추가하기
 
 
 export default {

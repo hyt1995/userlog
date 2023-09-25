@@ -112,9 +112,10 @@ const make_saving_data = (data : any, ex_num : string[], args : any) => {
     return obj;
 }
 
+
 export {
     get_tts_param,
     get_stf_param,
     get_search_text,
-    make_saving_data
+    make_saving_data,
 }

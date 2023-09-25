@@ -1,3 +1,14 @@
 .development.env
 .production.env
+.stg.env
 node_modules/
+docker/
+company/
+
+ttt.ts
+fpr.ts
+fine.ts
+basic.ts
+inspect.ts
+
+/src/graphql/brain/search_usage/
